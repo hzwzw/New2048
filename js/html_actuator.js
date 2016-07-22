@@ -66,28 +66,46 @@ HTMLActuator.prototype.addTile = function (tile) {
   inner.textContent = tile.value;
   switch (tile.value) {
     case 2:
-      inner.src = 'images/Slingshot.png';
+      inner.src = 'images/Hatchet.png';
       break;
     case 4:
-      inner.src = 'images/Bow.png';
+      inner.src = 'images/Pick.png';
       break;
     case 8:
-      inner.src = 'images/Pistol.png';
+      inner.src = 'images/axe.png';
       break;
     case 16:
-      inner.src = 'images/Rifle.png';
+      inner.src = 'images/Sword.png';
       break;
     case 32:
-      inner.src = 'images/Turret.png';
+      inner.src = 'images/BigSword.png';
       break;
     case 64:
-      inner.src = 'images/Launcher.png';
+      inner.src = 'images/Pistol.png';
       break;
     case 128:
+      inner.src = 'images/Rifle.png';
+      break;
+    case 256:
+      inner.src = 'images/Turret.png';
+      break;
+    case 512:
+      inner.src = 'images/Launcher.png';
+      break;
+    case 1024:
       inner.src = 'images/Cannon.png';
       break;
+    case 2048:
+      inner.src = 'images/Tank.png';
+      break;
+    case 4096:
+      inner.src = 'images/Plane.png';
+      break;
+    case 8192:
+      inner.src = 'images/Ship.png';
+      break;
     default:
-    inner.src = 'images/Cannon.png';
+      inner.src = 'images/ufo.png';
       break;
   }
 
